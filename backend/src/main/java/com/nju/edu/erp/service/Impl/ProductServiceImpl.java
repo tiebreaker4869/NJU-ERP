@@ -5,7 +5,6 @@ import com.nju.edu.erp.dao.ProductDao;
 import com.nju.edu.erp.exception.MyServiceException;
 import com.nju.edu.erp.model.po.CategoryPO;
 import com.nju.edu.erp.model.po.ProductPO;
-import com.nju.edu.erp.model.vo.CategoryVO;
 import com.nju.edu.erp.model.vo.CreateProductVO;
 import com.nju.edu.erp.model.vo.ProductInfoVO;
 import com.nju.edu.erp.service.ProductService;
@@ -103,7 +102,7 @@ public class ProductServiceImpl implements ProductService {
         // 修改分类相关信息
         category.setItemCount(category.getItemCount() - 1);
         int categoryAns = categoryDao.updateById(category);
-        if (ans == 0) {
+        if (categoryAns == 0) {
             throw new MyServiceException("B0005", "修改分类失败！");
         }
     }

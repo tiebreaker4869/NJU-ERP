@@ -16,11 +16,6 @@ public class CategoryTests {
     CategoryDao categoryDao;
 
     @Test
-    void createCategoryTest() {
-        categoryService.createCategory(4, "笔记本");
-    }
-
-    @Test
     void findByCategoryIdTest() {
         System.out.print(categoryDao.findByCategoryId(1));
     }

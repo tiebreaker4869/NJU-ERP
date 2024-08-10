@@ -6,7 +6,6 @@ import com.nju.edu.erp.dao.UserDao;
 import com.nju.edu.erp.exception.MyServiceException;
 import com.nju.edu.erp.model.po.User;
 import com.nju.edu.erp.model.vo.UserVO;
-import com.nju.edu.erp.service.ProductService;
 import com.nju.edu.erp.web.Response;
 import io.jsonwebtoken.Claims;
 import org.springframework.beans.BeanUtils;
